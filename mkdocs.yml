@@ -119,6 +119,7 @@ nav:
     - Security:
       - Auth:
         - Auth Overview: security/auth/README.md
+        - Concepts: security/auth/concepts.md
         - Azure AD:
           - Intro: security/auth/azure-ad/README.md
           - Concepts: security/auth/azure-ad/concepts.md

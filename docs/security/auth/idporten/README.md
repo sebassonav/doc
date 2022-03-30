@@ -172,7 +172,7 @@ In order to perform this client authentication, you must first [create a client 
 
 Notes:
 
-- Set the **`kid`** header claim. The value for this is found in the JWK ([JSON Web Key](https://datatracker.ietf.org/doc/html/rfc7517)) belonging to your client, i.e. `IDPORTEN_CLIENT_JWK`. This JWK also contains a private key that you must use to sign the JWT grant.
+- Set the **`kid`** header claim. The value for this is found in the [private JWK](../concepts.md#private-keys) belonging to your client, i.e. `IDPORTEN_CLIENT_JWK`. This JWK must also be used to sign the JWT grant.
 - Do not set the `x5c` header claim.
 - Ensure that the **`aud`** claim is equal to the **`issuer`** value found in the [metadata/discovery document](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata) (hosted at `IDPORTEN_WELL_KNOWN_URL`)
 
